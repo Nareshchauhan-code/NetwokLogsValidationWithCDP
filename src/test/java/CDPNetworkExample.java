@@ -6,11 +6,14 @@ import org.openqa.selenium.devtools.v126.network.Network;
 import org.openqa.selenium.devtools.v126.network.model.Request;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.testng.annotations.Test;
 
 import java.util.Optional;
 
 public class CDPNetworkExample {
-    public static void main(String[] args) {
+
+    @Test
+    public void CDPDemo(){
         // Initialize WebDriverManager to manage the ChromeDriver binary
         WebDriverManager.chromedriver().setup();
 
